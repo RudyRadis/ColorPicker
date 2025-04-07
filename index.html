@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Color-Picker CD</title>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">
+            Sélecteur de couleur
+        </h1>
+    </header>
+
+    <main class="picker">
+
+        <div class="picker__container">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="39" value="20" step="1" class="slider--hue" oninput="PopUpHue()">
+                <p>Teinte : <span class="value--hue"></span></p>
+                <input type="range" min="0" max="9" value="5" step="1" class="slider--sat" oninput="PopUpSat()">
+                <p>Saturation : <span class="value--sat"></span></p>
+            </div>
+            <div class="container"></div>
+        </div>
+
+        <div class="picker__informations">
+            <div class="informations__save">
+                <button class="information__save--center" onclick="modalToggle();">Envoyer par mail vos couleurs</button>
+            </div>
+            <div class="save">
+                
+
+
+                <div class="item">
+                    <div class="preview__save">
+                        <button class="closer">X</button>
+                        <div class="information">
+                            <div><label for="">Votre couleur :</label></div>
+                            <div class="nn"><input class="input" type="text" maxlength="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="preview__save">
+                        <button class="closer">X</button>
+                        <div class="information">
+                            <div><label for="">Votre couleur :</label></div>
+                            <div class="nn"><input class="input" type="text" maxlength="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="preview__save">
+                        <button class="closer">X</button>
+                        <div class="information">
+                            <div><label for="">Votre couleur :</label></div>
+                            <div class="nn"><input class="input" type="text" maxlength="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="preview__save">
+                        <button class="closer">X</button>
+                        <div class="information">
+                            <div><label for="">Votre couleur :</label></div>
+                            <div class="nn"><input class="input" type="text" maxlength="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="preview__save">
+                        <button class="closer">X</button>
+                        <div class="information">
+                            <div><label for="">Votre couleur :</label></div>
+                            <div class="nn"><input class="input" type="text" maxlength="25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="preview__save">
+                        <button class="closer">X</button>
+                        <div class="information">
+                            <div><label for="">Votre couleur :</label></div>
+                            <div class="nn"><input class="input" type="text" maxlength="25"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <div class="blur"></div>
+    <div class="modal">
+        <button class="modal__closer" onclick="modalToggle()">X</button>
+        <div class="content">
+            <img src="icone/download-mail.png" alt="mail-icone">
+            <h2>Recevez votre liste</h2>
+            <form method="post" role="form">
+                <p></p>
+                <input class="tptp" type="hidden" name="list">
+                <input type="mail" name="mail" placeholder="Entrez votre adresse mail" class="inputMail">
+                <div class="inputBox"><input type="submit" value="Confirmer" class="information__email" name="mailform"></div>
+            </form>
+            <div class="msg">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
