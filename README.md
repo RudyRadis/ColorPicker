@@ -18,7 +18,7 @@ Une version de ce projet existe également avec du PHP, permettant l'envoi de ma
 
 ⚠️ Cette version nécessite un environnement serveur compatible PHP, comme [XAMPP](https://www.apachefriends.org/index.html) ou [MAMP](https://www.mamp.info/fr/).
 
-👉 [Voir le dépôt GitHub de la version PHP](https://github.com/TON-LIEN)
+👉 [Voir le dépôt GitHub de la version PHP](https://github.com/RudyRadis/ColorPickerPHP)
 
 ## Lien du projet
 
